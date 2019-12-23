@@ -1,0 +1,66 @@
+#app {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows:
+     100px
+     50px
+      50px
+     200px;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "agregar agregar agregar agregar"
+    "nombre nombre cantidad cantidad"
+    "frutas frutas numero numero"
+     ;
+}
+#app h1{
+    grid-area: h1;
+    background-color: aquamarine;
+    margin-bottom:0px;
+    padding: 1rem;
+    text-align: center;
+    
+}
+.agregar{
+    grid-area: agregar;
+    
+    background-color: rgb(245, 212, 245);
+    padding:1rem;
+    text-align: center;
+}
+.nombre {
+    grid-area: nombre;
+    background-color:royalblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+}
+.cantidad {
+    grid-area: cantidad;
+    background-color:rgb(65, 225, 105);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 1rem;
+
+}
+ .frutas1{
+    
+    grid-area: frutas;
+    background-color:rgb(244, 248, 202);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;  
+    padding: 1rem;
+ 
+       
+   
+}
+.numero{
+    grid-area: numero;
+    background-color: salmon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
